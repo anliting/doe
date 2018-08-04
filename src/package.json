@@ -1,5 +1,5 @@
 {
-    "name":"@anliting/doe",
+    "name":"anliting-doe",
     "version":"1.0.0",
     "main":"src/doe.mjs",
     "license":"MIT"
