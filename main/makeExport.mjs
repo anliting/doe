@@ -1,4 +1,3 @@
-// PATH="/usr/lib/jvm/java-17-openjdk/bin/:$PATH" node
 import fs from'fs'
 import minify from'./minify.mjs'
 ;(async()=>{
