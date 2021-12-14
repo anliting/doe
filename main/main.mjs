@@ -35,7 +35,7 @@ function doe(n){
         for(let q;q=p[typeof t];t=q(t));
     }
 }
-let methods={
+let method={
     html(){
         return doe(document.documentElement,...arguments)
     },
@@ -47,7 +47,7 @@ let methods={
     },
 }
 export default new Proxy(doe,{
-    get:(t,p)=>methods[p]||function(){
+    get:(t,p)=>method[p]||function(){
         return doe(document.createElement(p),...arguments)
     }
 })
