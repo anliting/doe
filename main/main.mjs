@@ -32,5 +32,5 @@ let method={
     body:(...a)=>doe(document.body,...a),
 }
 export default new Proxy(doe,{
-    get:(t,p)=>method[p]||doe.bind(0,document.createElement(p))
+    get:(t,p)=>method[p]||((...a)=>doe(document.createElement(p),...a))
 })
